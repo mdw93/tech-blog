@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Javascript",
+    "description": "I think javascript is the best",
+    "user_id": 1,
+    "username_id": "Sal"
+  },
+  {
+    "name": "The Ultimate Tech Quiz",
+    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "user_id": 2,
+    "username_id": "Lernantino"
+  },
+  {
+    "name": "Roll 'Em Up",
+    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+    "user_id": 3,
+    "username_id": "Amiko"
+  }
+]
+

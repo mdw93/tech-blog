@@ -1,0 +1,57 @@
+<div class="text-center">
+  <h2 class ='target' id={{blogs.id}}>{{blogs.name}}</h2>
+  <p>{{blogs.description}}</p>
+  <p>Created by {{blogs.username_id}} on {{format_date blogs.date_created}}</p>
+   <p>Comment Section:</p>
+  {{#each comments}}
+  <p>{{comment}} by {{user_name}} on {{format_date date_created}}</p>
+  {{/each}}
+
+        <h3>Post a comment!</h3>
+
+    <div class="form-group">
+
+    <div class="form-group ">
+    <label for="exampleFormControlInput1">Username</label>
+    <input class="form-control" type="text" id="username" name="project-name">
+  </div>
+
+
+    <label>Comment:</label>
+    <textarea class="form-control" id="commentInfo" rows="3"></textarea>
+  </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" id="myButton">Create</button>
+      </div>
+  </div>
+</div>
+
+<script src="/js/blog.js">
+/*
+const myButton = document.getElementById('myButton')
+let myComment = document.getElementById('commentInfo')
+const blog_id = document.getElementsByClassName("target")[0].id
+let user = document.getElementById('username')
+
+
+myButton.onclick = async () => {
+
+  const comment = myComment.value.trim()
+  const user_name = user.value.trim()
+  
+  const response = await fetch(`/api/comment`, {
+          method: 'POST',
+          body: JSON.stringify({comment, blog_id, user_name}),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+        if (response.ok) {
+          document.location.replace(`/blog/${blog_id}`);
+        } else {
+          alert('Failed to create comment');
+        }
+      }
+*/
+</script>
